@@ -1,10 +1,18 @@
 ---
+import PillServices from "../pill-services.astro";
 import SectionContainer from "../section-container.astro";
 ---
 
 <SectionContainer>
-  <h2>Services</h2>
-  <div class="flex flex-wrap gap-5 w-full h-full">
-    
-  </div>
+  <h2 class="text-center text-[2rem] font-semibold mb-8">Services</h2>
+  <nav class="flex flex-wrap gap-5 w-full h-full">
+    <PillServices> Evaluación </PillServices>
+    <PillServices> Diagnóstico </PillServices>
+    <PillServices> Intervención </PillServices>
+    <PillServices> Terapia Individual</PillServices>
+    <PillServices> Certificado de Salud Mental </PillServices>
+    <PillServices> Entrenamiento a padres </PillServices>
+    <PillServices> Capacitación a Docentes y Directivos </PillServices>
+    <PillServices> Talleres Grupales </PillServices>
+  </nav>
 </SectionContainer>
