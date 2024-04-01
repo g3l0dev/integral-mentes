@@ -5,17 +5,18 @@ import SectionContainer from "../section-container.astro";
 ---
 
 <SectionContainer
-  class="h-[400px] bg-gradient-to-t from-[#1083B9] to-transparent">
+  class="h-[400px] xl:h-[80vh] bg-gradient-to-t from-[#1083B9] to-transparent md:bg-gradient-to-r">
   <div
     class="absolute top-0 left-0 -z-10 h-full w-full bg-right bg-cover bg-no-repeat bg-[url('/index_banner.webp')]">
   </div>
-  <div class="w-full h-full flex flex-col justify-end">
+  <div
+    class="w-full h-full flex flex-col justify-end md:w-[37.5rem] xl:justify-center">
     <h1 class="text-balance text-white text-[2.5rem] leading-10 mb-8">
       Mente en equilibrio: Tu puente hacia la <strong
         class="text-[#C6E5B1] font-bold">Salud mental</strong
       >
     </h1>
-    <Cta href="#">
+    <Cta class="self-start" href="#">
       Descubre tu bienestar interior ahora <ArrowUpRight />
     </Cta>
   </div>
