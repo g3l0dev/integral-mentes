@@ -1,0 +1,13 @@
+---
+interface Props {
+  texto: string;
+}
+const { texto } = Astro.props;
+---
+
+<div
+  class="absolute w-3 h-3 bg-gray-900 rounded-full mt-1.5 -start-1.5 border border-gray-900 dark:bg-gray-700">
+</div>
+<h3 class="text-lg font-semibold text-gray-900 ms-5">
+  {texto}
+</h3>

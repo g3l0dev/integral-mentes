@@ -1,0 +1,14 @@
+---
+import { EXPERIENCE } from "../api/services";
+import ExperienceItems from "../components/experience-items.astro";
+---
+
+<ol class="relative border-s  border-gray-700">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="mb-10 ms-4 ">
+        <ExperienceItems {...experience} />
+      </li>
+    ))
+  }
+</ol>
