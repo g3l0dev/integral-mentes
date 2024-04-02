@@ -1,20 +1,22 @@
 ---
 import Experience from "../experience.astro";
 import SectionContainer from "../section-container.astro";
+import Studie from "../studie.astro";
 ---
 
 <SectionContainer>
   <section>
-    <div>
-      <h2>Perfil</h2>
+    <div class="h-full w-full">
+      <h2 class="text-4xl text-center font-bold">Perfil</h2>
       <p></p>
     </div>
-    <div>
-      <img src="" alt="Doris Castillo psicóloga">
-    </div>
+  </section>
+  <section class="mb-9">
+    <h3 class="text-3xl font-semibold mb-5">Experiencia</h3>
+    <Experience />
   </section>
   <section>
-    <h3>Experiencia</h3>
-    <Experience/>
+    <h3 class="text-3xl font-semibold mb-5">Estudios</h3>
+    <Studie />
   </section>
 </SectionContainer>

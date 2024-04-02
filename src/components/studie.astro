@@ -1,0 +1,14 @@
+---
+import { STUDIES } from "../api/study";
+import StudieItem from "./studie-item.astro";
+---
+
+<ol class="relative border-s border-gray-200 dark:border-gray-700">
+  {
+    STUDIES.map((studies) => (
+      <li class="mb-10 ms-4">
+       <StudieItem {...studies} />
+      </li>
+    ))
+  }
+</ol>
