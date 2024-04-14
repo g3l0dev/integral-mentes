@@ -1,0 +1,8 @@
+---
+import { TARIFA } from "../api/tarifa";
+import PriceItem from "./price-item.astro";
+---
+
+<div class="flex gap-x-[1rem]">
+  {TARIFA.map((tarifa) => <PriceItem {...tarifa} />)}
+</div>

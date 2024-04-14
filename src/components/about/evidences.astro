@@ -1,0 +1,94 @@
+---
+import SectionContainer from "../section-container.astro";
+---
+
+<SectionContainer>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="/testimonios/1.webp" alt="eventos de Dra. Doris Castillo" />
+      </div>
+      <div class="swiper-slide">
+        <img src="/testimonios/2.webp" alt="eventos de Dra. Doris Castillo" />
+      </div>
+      <div class="swiper-slide">
+        <img src="/testimonios/3.webp" alt="eventos de Dra. Doris Castillo" />
+      </div>
+      <div class="swiper-slide">
+        <img src="/testimonios/4.webp" alt="eventos de Dra. Doris Castillo" />
+      </div>
+      <div class="swiper-slide">
+        <img src="/testimonios/5.webp" alt="eventos de Dra. Doris Castillo" />
+      </div>
+      <div class="swiper-slide">
+        <img src="/testimonios/6.webp" alt="eventos de Dra. Doris Castillo" />
+      </div>
+      <div class="swiper-slide">
+        <img src="/testimonios/7.webp" alt="eventos de Dra. Doris Castillo" />
+      </div>
+      <div class="swiper-slide">
+        <img src="/testimonios/8.webp" alt="eventos de Dra. Doris Castillo" />
+      </div>
+      <div class="swiper-slide">
+        <img src="/testimonios/9.webp" alt="eventos de Dra. Doris Castillo" />
+      </div>
+      <div class="swiper-slide">
+        <img src="/testimonios/10.webp" alt="eventos de Dra. Doris Castillo" />
+      </div>
+      <div class="swiper-slide">
+        <img src="/testimonios/11.webp" alt="eventos de Dra. Doris Castillo" />
+      </div>
+      <div class="swiper-slide">
+        <img src="/testimonios/12.webp" alt="eventos de Dra. Doris Castillo" />
+      </div>
+      <div class="swiper-slide">
+        <img src="/testimonios/13.webp" alt="eventos de Dra. Doris Castillo" />
+      </div>
+      <div class="swiper-slide">
+        <img src="/testimonios/14.webp" alt="eventos de Dra. Doris Castillo" />
+      </div>
+      <div class="swiper-slide">
+        <img src="/testimonios/15.webp" alt="eventos de Dra. Doris Castillo" />
+      </div>
+      <div class="swiper-slide">
+        <img src="/testimonios/16.webp" alt="eventos de Dra. Doris Castillo" />
+      </div>
+      <div class="swiper-slide">
+        <img src="/testimonios/17.webp" alt="eventos de Dra. Doris Castillo" />
+      </div>
+      <div class="swiper-slide">
+        <img src="/testimonios/18.webp" alt="eventos de Dra. Doris Castillo" />
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</SectionContainer>
+
+<style>
+  .swiper-slide img {
+    width: 100%;
+    height: 100%;
+  }
+</style>
+
+<script type="module">
+  const swiper = new Swiper(".swiper", {
+    slidesPerView: 4,
+    spaceBetween: 20,
+    loop: true,
+    autoplay: {
+      delay: 2500,
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      520: {
+        slidesPerView: 2,
+      },
+      950: {
+        slidesPerView: 4,
+      },
+    },
+  });
+</script>

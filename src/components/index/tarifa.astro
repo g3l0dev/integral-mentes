@@ -1,7 +1,10 @@
 ---
-import Cta from "../cta.astro";
-import SectionContainer from "../section-container.astro";
+import Bancolombia from "../../icon/bancolombia.astro";
+import Nequi from "../../icon/nequi.astro";
 import Whatsapp from "../../icon/whatsapp.astro";
+import Cta from "../cta.astro";
+import Price from "../price.astro";
+import SectionContainer from "../section-container.astro";
 ---
 
 <SectionContainer>
@@ -9,32 +12,16 @@ import Whatsapp from "../../icon/whatsapp.astro";
     Tarifa
   </h2>
   <section class="mb-9 flex flex-col md:justify-center md:items-center">
-    <article class="w-full md:w-[22.562rem] xl:w-max-[22.562rem]">
-      <div class="w-full p-3 bg-[#10587C]">
-        <h3 class="text-center text-2xl text-white font-semibold">Cartagena</h3>
-      </div>
-      <div>
-        <h4 class="text-center tex-xl font-semibold text-balance text-black/50">
-          Cuota inicial
-        </h4>
-        <p class="text-lg text-center text-pretty text-black/50">
-          $<span class="text-4xl text-[#C6E5B1] font-bold">160.000</span>cop
-        </p>
-      </div>
-      <div class="p-4">
-        <h5 class="text-xl font-semibold text-black/50 mb-2">Valor Sesión</h5>
-        <p class="text-lg text-black/50">
-          $<span class="text-4xl font-bold text-black mb-5">90.000</span>cop
-        </p>
-        <h5 class="text-xl font-semibold text-black/50 mb-2">6 sesiones</h5>
-        <p class="text-lg text-black/50">
-          $<span class="text-4xl font-bold text-black">500.000</span>cop
-        </p>
-      </div>
-      <p class="text-center text-balance text-2xl text-[#134A67]">
-        <strong class="font-bold">Pago por adelantado</strong>
-      </p>
-    </article>
+    <Price />
+  </section>
+
+  <section class="flex flex-col justify-center items-center mb-12">
+    <h2 class="text-[1.5rem] font-semibold mb-9">Método de pago</h2>
+
+    <div class="flex gap-x-4">
+      <Bancolombia class="size-12" />
+      <Nequi class="size-12" />
+    </div>
   </section>
 
   <section class="flex flex-col">

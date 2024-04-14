@@ -1,0 +1,35 @@
+---
+interface Props{
+  title:string
+  inicial:string
+  sesion:string
+  sesiones:string
+}
+const {title, inicial, sesion, sesiones}=Astro.props
+---
+<article class="w-full md:w-[22.562rem] xl:w-max-[22.562rem]">
+  <div class="w-full p-3 bg-[#10587C]">
+    <h3 class="text-center text-2xl text-white font-semibold">{title}</h3>
+  </div>
+  <div>
+    <h4 class="text-center tex-xl font-semibold text-balance text-black/50">
+      Cuota inicial
+    </h4>
+    <p class="text-lg text-center text-pretty text-black/50">
+      $<span class="text-4xl text-[#C6E5B1] font-bold">{inicial}</span>cop
+    </p>
+  </div>
+  <div class="p-4">
+    <h5 class="text-xl font-semibold text-black/50 mb-2">Valor Sesión</h5>
+    <p class="text-lg text-black/50">
+      $<span class="text-4xl font-bold text-black mb-5">{sesion}</span>cop
+    </p>
+    <h5 class="text-xl font-semibold text-black/50 mb-2">6 sesiones</h5>
+    <p class="text-lg text-black/50">
+      $<span class="text-4xl font-bold text-black">{sesiones}</span>cop
+    </p>
+  </div>
+  <p class="text-center text-balance text-2xl text-[#134A67]">
+    <strong class="font-bold">Pago por adelantado</strong>
+  </p>
+</article>

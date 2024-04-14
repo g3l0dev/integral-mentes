@@ -1,6 +1,6 @@
 ---
-import Menu from '../components/menu.astro';
-
+import Menu from "../components/menu.astro";
+import Footer from "../components/footer.astro";
 interface Props {
   title?: string;
   description?: string;
@@ -16,11 +16,24 @@ const { title, description } = Astro.props;
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css"
+      integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>{title}</title>
   </head>
   <body>
-    <Menu/>
+    <Menu />
     <slot />
+    <Footer />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.js"
+      integrity="sha512-hRhHH3+D9xVKPpodEiYzHWIG8CWbCjp7LCdZ00K3/6xsdC3iT0OlPJLIwxSMEl07gya1Ae8iAqXjMMLpzqqh0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
   </body>
 </html>
 
